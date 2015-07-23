@@ -1,12 +1,13 @@
 {
-  "name": "loopback-getting-started",
+  "name": "sl-coffeetime",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "pretest": "jshint ."
+    "start": "checkrunning mongod && node server/server.js"
   },
   "dependencies": {
     "async": "^1.3.0",
+    "checkrunning": "0.0.3",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "errorhandler": "^1.1.1",
